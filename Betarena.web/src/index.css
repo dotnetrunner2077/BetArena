@@ -1,0 +1,60 @@
+/* ─── Design Tokens ─────────────────────────────────────── */
+:root {
+  --clr-bg:        #0a0b10;
+  --clr-surface:   #111320;
+  --clr-surface-2: #181b2e;
+  --clr-border:    #252843;
+
+  --clr-primary:   #7c5cfc;
+  --clr-primary-h: #9b7fff;
+  --clr-primary-dim: rgba(124, 92, 252, 0.18);
+  --clr-accent:    #3b7bfc;
+  --clr-accent-dim: rgba(59, 123, 252, 0.15);
+
+  --clr-success:   #22c55e;
+  --clr-error:     #ef4444;
+  --clr-warning:   #f59e0b;
+
+  --clr-text:      #c8cde8;
+  --clr-text-muted:#7880a4;
+  --clr-heading:   #eef0ff;
+  --clr-white:     #ffffff;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --shadow-card: 0 4px 32px rgba(0,0,0,0.45), 0 1px 6px rgba(0,0,0,0.3);
+  --shadow-glow: 0 0 24px rgba(124, 92, 252, 0.25);
+
+  --sans: 'Segoe UI', system-ui, Roboto, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--clr-text);
+  background: var(--clr-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Reset ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { min-height: 100svh; background: var(--clr-bg); }
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--clr-heading);
+  letter-spacing: -0.3px;
+}
+
+a { color: var(--clr-primary); text-decoration: none; }
+a:hover { color: var(--clr-primary-h); }
