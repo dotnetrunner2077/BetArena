@@ -1,10 +1,21 @@
 <Solution>
-  <Project Path="Api/Api.csproj" />
-  <Project Path="ApPlications.Layer/Applications.Layer.csproj" />
-  <Project Path="BetArena.Web/betarena.web.esproj">
-    <Build />
-    <Deploy />
-  </Project>
-  <Project Path="Domain/Domain.csproj" />
-  <Project Path="Test/Test.csproj" />
+  <Folder Name="/SRC/" />
+  <Folder Name="/SRC/01-WEB/">
+    <Project Path="BetArena.Web/betarena.web.esproj">
+      <Build />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/SRC/02-API/">
+    <Project Path="Api/Api.csproj" />
+  </Folder>
+  <Folder Name="/SRC/03-Application/">
+    <Project Path="ApPlications.Layer/Applications.Layer.csproj" />
+  </Folder>
+  <Folder Name="/SRC/04-Domain/">
+    <Project Path="Domain/Domain.csproj" />
+  </Folder>
+  <Folder Name="/SRC/05-Test/">
+    <Project Path="Test/Test.csproj" />
+  </Folder>
 </Solution>
